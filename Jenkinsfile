@@ -43,14 +43,14 @@ pipeline {
         }
       }
 
-/*    stage ('Sonar analysis') {
+    stage ('Sonar analysis') {
       steps {
         withSonarQubeEnv('my-sonarqube-demo') {
         sh 'mvn sonar:sonar'
           }
         }
       }
-*/
+
 
   }
 }
