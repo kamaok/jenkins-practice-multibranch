@@ -15,14 +15,14 @@ pipeline {
   }
  
 
-  stages {
+/*  stages {
 
-/*    stage('Checkout') {
+    stage('Checkout') {
       steps {
-        git(url: 'git@github.com:kamaok/course.git', branch: 'master', credentialsId: 'jenkins-user-ssh-key')
+        git(url: 'git@github.com:kamaok/course.git', branch: 'test', credentialsId: 'jenkins-user-ssh-key')
         }
-      }
-*/
+*/      }
+
     
 
     stage ('Compile') {
@@ -43,7 +43,11 @@ pipeline {
         }
       }
 
+<<<<<<< HEAD
      stage ('Sonar analysis') {
+=======
+    stage ('Sonar analysis') {
+>>>>>>> test
       steps {
         withSonarQubeEnv('my-sonarqube-demo') {
         sh 'mvn sonar:sonar'
