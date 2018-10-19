@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'docker-maven-build-slave'
+  }
 
   options {
     buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '3')
