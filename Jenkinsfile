@@ -20,8 +20,8 @@ pipeline {
 /*    stage('Checkout') {
       steps {
         git(url: 'git@github.com:kamaok/course.git', branch: 'test', credentialsId: 'jenkins-user-ssh-key')
-        }
-*/      }
+      }
+*/
 
 
 
